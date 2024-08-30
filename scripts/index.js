@@ -12,8 +12,17 @@ const itemList = document.getElementById('item-list');
 const addItem = () => {
     const inputValue = inputField.value;
     if(inputValue !== ""){
+        //variables
         const listItem = document.createElement('li');
-        listItem.textContent = inputValue;
+        const checkbox = document.createElement('input');
+
+        //input type
+        checkbox.type = 'checkbox';
+
+        //appending the box then the text
+        listItem.appendChild(checkbox);
+        listItem.appendChild(document.createTextNode(inputValue));
+        console.log(listItem);
         itemList.appendChild(listItem);
         inputField.value = "";
     }
