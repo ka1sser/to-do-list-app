@@ -7,10 +7,10 @@
         <meta name="description" content="This is a To-Do-List app project for self-learning"/>
 
         <link rel="stylesheet" href="styles/styles.css" />
+        <script src="scripts/index.js" defer></script>
 
         <!--
         <link rel="icon" href="" type="image/x-icon"/>
-        <script src="" defer></script>
         -->
 
         <title>
@@ -26,10 +26,21 @@
                     Ta-Daaaaaa!
                 </h1>
             </header>
-            <div class="input_div">
-                <input class="input" type="text" placeholder="What do you want to do?">
-                <button class="addButton">+</button>
-            </div>
+
+            <!--Main part-->
+            <main>
+                <div class="input_div">
+                    <input id="input" type="text" placeholder="What do you want to do?">
+                    <button id="addButton">+</button>
+                </div>
+
+                <div id="unordered-list">
+                    <ul id="item-list">
+                        <li>Temporary item</li>
+                    </ul>
+                </div>
+            </main>
+            
         </div>
     </body>
 </html>
