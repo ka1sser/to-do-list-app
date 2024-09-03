@@ -10,6 +10,7 @@ yellow-ish = rgb(249, 247, 201)
 /*--Global--*/
 * {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
@@ -28,6 +29,7 @@ header h1{
     text-align: center;
     color: black;
     padding: 20px;
+    font-size: 2rem;
 }
 
 .input_div{
@@ -39,9 +41,32 @@ header h1{
 #input{
     display: inline-block;
     text-align: center;
+    background-color: rgb(213, 240, 193, 100%);
+    border: none;
     margin: 0 auto;
     padding: 0 auto;
     width: 90%;
+    font-size: 1.25rem;
+}
+
+#input:hover{
+    background-color: rgb(170, 217, 187);
+}
+
+#input:focus{
+    background-color: rgb(170, 217, 187);
+    outline-color: green;
+}
+
+#addButton{
+    border: none;
+    background-color: rgb(249, 247, 201);
+    font-size: 1.25rem;
+}
+
+#addButton:hover{
+    background-color: rgb(170, 217, 187);
+    cursor: pointer;
 }
 
 #item-list {
@@ -54,11 +79,30 @@ header h1{
 }
 
 #item-list li{
-    background-color: rgb(170, 217, 187, 100%);
+    display: block;
     margin: 10px auto;
     padding: 20px auto;
+    font-size: 1.3rem;
+    width: 100%;
 }
 
-#item-list .close-button{
+.check-box{
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.check-box:hover{
+    cursor: pointer;
+}
+
+.close-button{
     float: right;
+    background-color:  rgb(249, 247, 201);
+    border: none;
+    font-size: 1.25rem;
+}
+
+.close-button:hover{
+    color: red;
+    cursor: pointer;
 }
