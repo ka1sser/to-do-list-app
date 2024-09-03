@@ -23,6 +23,7 @@ const addItem = () => {
 
     let closeButton = document.createElement("button"); //creating a close button
     closeButton.textContent = "X";
+    closeButton.className = "close-button";
 
     li.appendChild(checkBox); // this will add the checkbox created
     li.appendChild(text); // this will create the text node within the li element

@@ -1,3 +1,64 @@
-ul {
+/*--Main Colors--
+
+bluegreen-ish = rgb(128, 188, 189)
+green-ish = rgb(170, 217, 187)
+yellowgreen-ish = rgb(213, 240, 193)
+yellow-ish = rgb(249, 247, 201)
+*/
+
+
+/*--Global--*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(128, 188, 189);
+    height: 100%;
+  }
+
+#whole-body{
+    background-color: rgb(249, 247, 201);
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+header h1{
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.input_div{
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#input{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 90%;
+}
+
+#item-list {
     list-style-type: none;
+    color: black;
+    margin: 0px auto;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+#item-list li{
+    background-color: rgb(170, 217, 187, 100%);
+    margin: 10px auto;
+    padding: 20px auto;
+}
+
+#item-list .close-button{
+    float: right;
 }
