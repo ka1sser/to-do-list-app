@@ -2,6 +2,8 @@ const inputField = document.getElementById('input');
 const addButton = document.getElementById('addButton');
 const itemList = document.getElementById('item-list');
 
+
+
 /* addItem()
  * 
  * This function will get the input value on inputField or the
@@ -10,22 +12,15 @@ const itemList = document.getElementById('item-list');
  */
 
 const addItem = () => {
-    const inputValue = inputField.value;
-    if(inputValue !== ""){
-        //variables
-        const listItem = document.createElement('li');
-        const checkbox = document.createElement('input');
+    
+    let inputValue = inputField.value; // gets the value of the text bar
+    let text = document.createTextNode(inputValue); //used to create a text node with the inputValue
 
-        //input type
-        checkbox.type = 'checkbox';
+    let li = document.createElement("li"); // used to create an li element in the DOM
+    li.appendChild(text); // this will create the text node within the li element
+    itemList.appendChild(li); // the li element containing the text node will be added to the ul
 
-        //appending the box then the text
-        listItem.appendChild(checkbox);
-        listItem.appendChild(document.createTextNode(inputValue));
-        console.log(listItem);
-        itemList.appendChild(listItem);
-        inputField.value = "";
-    }
+    inputField.value = ""; // resetting the input bar after entering the item
 }
 
-addButton.addEventListener('click', addItem);
+addButton.addEventListener("click", addItem);
