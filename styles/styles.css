@@ -20,9 +20,11 @@ body {
 
 #whole-body{
     background-color: rgb(249, 247, 201);
+    border-radius: 25%;
     display: block;
     margin: 0 auto;
     width: 75%;
+    padding: 0px 15px 15px;
 }
 
 header h1{
@@ -44,7 +46,7 @@ header h1{
     background-color: rgb(213, 240, 193, 100%);
     border: none;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 5px auto;
     width: 90%;
     font-size: 1.25rem;
 }
@@ -74,12 +76,13 @@ header h1{
     color: black;
     margin: 0px auto;
     padding-left: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     width: 90%;
 }
 
 #item-list li{
     display: block;
+    background-color: rgb(234, 232, 188);
     margin: 10px auto;
     padding: 20px auto;
     font-size: 1.3rem;
